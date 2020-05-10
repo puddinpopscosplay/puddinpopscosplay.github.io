@@ -27,17 +27,18 @@ body {
 
 
 ::-webkit-scrollbar { background: #f3f3f3; width: 5px; height: 5px;}
-::-webkit-scrollbar-thumb { background: #141415; width: 5px }
+::-webkit-scrollbar-thumb { background: #8d3658; width: 5px }
 ::-webkit-scrollbar-corner { background: #000; }
 
-::-moz-selection { background-color: #f3b95c; color: #222;}
-::selection {background-color: #f3b95c; color: #222;}
+::-moz-selection { background-color: #8d3658; color: #fff;}
+::selection {background-color: #8d3658; color: #fff;}
 
 h1 {font-family: 'Sacramento', cursive;
     font-weight: bold; 
     font-size: 30px; 
     margin-left: 30px; 
-    color: #8d3658;}
+    color: #8d3658;
+    text-transform: lowercase;}
 
 h2 {font-family: arial; 
     text-transform: uppercase; 
@@ -98,7 +99,7 @@ a:visited {color: #8d3658;}
 	margin-top: 10px;
 	border-color: #8d3658;
 	border-style: solid;
-	border-weight: 5px;
+	border-width: 5px;
 	background-attachment: scroll;
 	padding: 10px;
 	position: -webkit-sticky;
@@ -109,7 +110,7 @@ a:visited {color: #8d3658;}
 .tableofcontents {
 	border-color: #8d3658;
 	border-style: solid;
-	border-weight: 5px;
+	border-width: 2px;
 	padding: 5px;
 	height: 95%;}
 
@@ -124,7 +125,7 @@ a:visited {color: #8d3658;}
 	background-color:rgba(255,255,255,0.5)}
 	
 /****************************************
- BODY
+ BODY - INTRO
 *****************************************/
 .intromain {width: 900px;
 	background-color:rgba(255,255,255,0.8);
@@ -178,12 +179,63 @@ a:visited {color: #8d3658;}
 	font-size: 14px;
 	line-height: 150%;}
 
-
+/****************************************
+ BODY - CURRENT PROJECTS
+*****************************************/
 .cp {width: 900px;
 	background-color:rgba(255,255,255,0.8);
 	color: #000;
 	padding: 40px;
-	margin-top: 20px;}
+	margin-top: 20px;
+    height: 600px;}
+
+.currententry {	border-color: #8d3658;
+	border-style: solid;
+	border-width: 5px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    width: 250px;}
+
+.currentpiccontainer {
+  position: relative;
+  width: 250px;
+}
+
+.currentpic {
+  display: block;
+  width: 250px;
+  height: auto;
+}
+
+.currentpicoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #8d3658;
+}
+
+.currentpiccontainer:hover .currentpicoverlay {
+  opacity: 1;
+}
+
+.currentpictext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 .pp {width: 900px;
 	background-color:rgba(255,255,255,0.8);
@@ -221,9 +273,8 @@ a:visited {color: #8d3658;}
   <img src="https://i.imgur.com/O9y1IY1.png" alt="Avatar" class="intropic" style="width:300px">
   <div class="intropicmiddle">
     <div class="intropictext"><h1>photography by: </h1>
-<a href="https://www.instagram.com/mezapixel/"><h2>mezapixel on insta</h2></a></div>
-  </div>
-</div>
+<a href="https://www.instagram.com/mezapixel/"><h2>mezapixel on insta</h2></a></div></div></div>
+
 <div class="introblurb"><p>I'm so glad you've found yourself here, and I hope you find something to enjoy here, or maybe help you with your own adventures in cosplay. I've been a member of the cosplay community seriously for only a handful of years, but I have long had experience with sewing and crafting. I've found cosplay to be a fantastic outlet for those skills as well as my geeky interests. Those geeky interests are varied and sometimes fleeting, both fortunately and unfortunately, but there's nothing like the pride of finishing a project. Either one I've made entirely from scratch, one I've contributed too, or one I've merely complied for the fun of wearing without the stress of making. I'm a firm believer in all cosplay is cosplay, and that there's nothing wrong with buying, making, or any combination of the two. I also genuinely love making friends through cosplay. There's something special about cosplaying with a friend, or soon to be friend, from the same property, or even as twins! Isn't it awesome to find someone in this world who loves a character as much as you do enough to also dress up as them?
 
 Hope you enjoy poking around here, and if you do, you'll consider following me on Instagram for the latest content.</p>
@@ -240,9 +291,63 @@ Maecenas ut dui eu felis sagittis sodales eu quis ipsum. Donec nec tempus felis.
 </div>
 </div>
 
-<div class="cp" id="current">TESTING</div>
+<div class="cp" id="current">
+<h1>current projects</h1>
+<h2>all cosplays currently in progress</h2>
 
-<div class="pp" id="previous">TESTING</div>
+<div class="currententry"><div class="currentpiccontainer">
+  <img src="https://i.imgur.com/O9y1IY1.png" class="currentpic" style="width:250px">
+  <div class="currentpicoverlay">
+    <div class="currentpictext">Black Mask Harley Quinn - Birds of Prey</div>
+  </div>
+</div>
+</div>
+
+<div class="currententry"><div class="currentpiccontainer">
+  <img src="https://i.imgur.com/O9y1IY1.png" class="currentpic" style="width:250px">
+  <div class="currentpicoverlay">
+    <div class="currentpictext">Mama - Death Stranding</div>
+  </div>
+</div>
+</div>
+
+<div class="currententry"><div class="currentpiccontainer">
+  <img src="https://i.imgur.com/O9y1IY1.png" class="currentpic" style="width:250px">
+  <div class="currentpicoverlay">
+    <div class="currentpictext">Crying Heart Pajamas Harley Quinn - Birds of Prey</div>
+  </div>
+</div>
+</div>
+
+<div class="currententry"><div class="currentpiccontainer">
+  <img src="https://i.imgur.com/O9y1IY1.png" class="currentpic" style="width:250px">
+  <div class="currentpicoverlay">
+    <div class="currentpictext">Puzzle Blouse Vanessa - Penny Dreadful</div>
+  </div>
+</div>
+</div>
+
+<div class="currententry"><div class="currentpiccontainer">
+  <img src="https://i.imgur.com/O9y1IY1.png" class="currentpic" style="width:250px">
+  <div class="currentpicoverlay">
+    <div class="currentpictext">Jedha Jyn - Rogue One</div>
+  </div>
+</div>
+</div>
+
+
+<div class="currententry"><div class="currentpiccontainer">
+  <img src="https://i.imgur.com/O9y1IY1.png" class="currentpic" style="width:250px">
+  <div class="currentpicoverlay">
+    <div class="currentpictext">Rey Skywalker - The Rise of Skywalker</div>
+  </div>
+</div>
+</div>
+
+</div>
+
+<div class="pp" id="previous"><h1>previous projects</h1>
+<h2>finished cosplays</h2></div>
 </div>
 
 </body>
