@@ -26,8 +26,8 @@ body {
 }
 
 
-::-webkit-scrollbar { background: #f3f3f3; width: 5px; height: 5px;}
-::-webkit-scrollbar-thumb { background: #8d3658; width: 5px }
+::-webkit-scrollbar { background: #f3f3f3; width: 10px; height: 5px;}
+::-webkit-scrollbar-thumb { background: #8d3658; width: 10px }
 ::-webkit-scrollbar-corner { background: #000; }
 
 ::-moz-selection { background-color: #8d3658; color: #fff;}
@@ -42,11 +42,12 @@ h1 {font-family: 'Sacramento', cursive;
 
 h2 {font-family: arial; 
     text-transform: uppercase; 
-    font-size: 12px; 
+    font-size: 10px; 
     text-align: right; 
-    margin: -20px 30px 0px 30px;  
+    margin: -20px 30px 10px 30px;  
     border-top: 1px #8d3658 solid; 
-    color: #000;}
+    color: #000;
+	letter-spacing: 2px;}
 
 a:link {text-decoration: none;
 	color: #8d3658;
@@ -59,7 +60,7 @@ a:visited {color: #8d3658;}
 
 #wrapper {text-align:left;
         width:1000px;
-        margin: -370px 0px 30px 300px;
+        margin: -480px 0px 30px 300px;
         padding-bottom: 5px;}
 
 /****************************************
@@ -94,7 +95,7 @@ a:visited {color: #8d3658;}
 *****************************************/
 #sidebar {background-color:rgba(255,255,255,0.4);
 	width: 220px;
-	height: 350px;
+	height: 450px;
 	margin-left: 40px;
 	margin-top: 10px;
 	border-color: #8d3658;
@@ -187,7 +188,7 @@ a:visited {color: #8d3658;}
 	color: #000;
 	padding: 40px;
 	margin-top: 20px;
-    height: 600px;}
+	height: 1000px;}
 
 .currententry {	border-color: #8d3658;
 	border-style: solid;
@@ -218,7 +219,7 @@ a:visited {color: #8d3658;}
   width: 250px;
   opacity: 0;
   transition: .5s ease;
-  background-color: #8d3658;
+  background-color: rgb(141, 53, 87, .8);
 }
 
 .currentpiccontainer:hover .currentpicoverlay {
@@ -227,17 +228,61 @@ a:visited {color: #8d3658;}
 
 .currentpictext {
   color: white;
-  font-size: 20px;
+  font-size: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
-.pp {width: 900px;
+.cpheader {
+	font-size: 9px;
+	color: #fff;
+	text-align: justify;
+	padding-bottom: 5px;
+	border-bottom: 2px solid white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.cpsubheader {
+	font-size: 8px;
+	color: #fff;
+	text-align: right;
+	padding: 5px 2px 0px 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform: lowercase;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+.cpq {
+	font-size: 8px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-align: left;
+	padding-bottom: 5px;
+	border-bottom: 2px solid white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.cpa {
+	font-size: 8px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-align: right;
+	padding-top: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.pp {
+	width: 900px;
 	background-color:rgba(255,255,255,0.8);
 	color: #000;
 	padding: 40px;
@@ -251,7 +296,9 @@ a:visited {color: #8d3658;}
 	<div class="maintitle">puddinpops cosplay
 		</div>
 	<div id="sidebar">
-	<div class="tableofcontents"><br><br><h2>navigation</h2>
+	<div class="tableofcontents">
+		<img src="https://i.imgur.com/B2lJodF.png" style="width: 150px; margin-bottom: 20px;">
+		<br><br><h2>navigation</h2>
 	<div class="navigationlink"><a href="#home">home</a></div>
 	<div class="navigationlink"><a href="#current">current projects</a></div>
 	<div class="navigationlink"><a href="#previous">previous projects</a></div>
@@ -295,54 +342,90 @@ Maecenas ut dui eu felis sagittis sodales eu quis ipsum. Donec nec tempus felis.
 <h1>current projects</h1>
 <h2>all cosplays currently in progress</h2>
 
-<div class="currententry"><div class="currentpiccontainer">
-  <img src="https://i.imgur.com/O9y1IY1.png" class="currentpic" style="width:250px">
-  <div class="currentpicoverlay">
-    <div class="currentpictext">Black Mask Harley Quinn - Birds of Prey</div>
+<div class="currententry">
+<div class="currentpiccontainer">
+  		<img src="https://i.imgur.com/J9pr1j7.jpg" class="currentpic" style="width:250px">
+  <a href="LINK HERE">
+	<div class="currentpicoverlay">
+	<div class="currentpictext"><div class="cpheader"> Black Mask Harley</div> 
+	<div class="cpsubheader">Birds of Prey</div>
+	<div class="cpq">started:</div>
+	<div class="cpa">mm/dd/yy</div>
+</div>
   </div>
-</div>
-</div>
+	</div></a>
+		</div>
 
-<div class="currententry"><div class="currentpiccontainer">
-  <img src="https://i.imgur.com/O9y1IY1.png" class="currentpic" style="width:250px">
-  <div class="currentpicoverlay">
-    <div class="currentpictext">Mama - Death Stranding</div>
-  </div>
-</div>
-</div>
+<div class="currententry">
+<div class="currentpiccontainer">
+		 <img src="https://i.imgur.com/J9pr1j7.jpg" class="currentpic" style="width:250px">
+	<a href="LINK HERE">
+	<div class="currentpicoverlay">
+	<div class="currentpictext"><div class="cpheader"> Mama (Målingen)</div> 
+	<div class="cpsubheader">Death Stranding</div>
+	<div class="cpq">started:</div>
+	<div class="cpa">mm/dd/yy</div>
+	</div>
+		</div>
+			</div></a>
+				</div>		
 
-<div class="currententry"><div class="currentpiccontainer">
-  <img src="https://i.imgur.com/O9y1IY1.png" class="currentpic" style="width:250px">
-  <div class="currentpicoverlay">
-    <div class="currentpictext">Crying Heart Pajamas Harley Quinn - Birds of Prey</div>
-  </div>
-</div>
-</div>
+<div class="currententry">
+<div class="currentpiccontainer">
+		 <img src="https://i.imgur.com/J9pr1j7.jpg" class="currentpic" style="width:250px">
+	<a href="LINK HERE">
+	<div class="currentpicoverlay">
+	<div class="currentpictext"><div class="cpheader"> Crying PJS Harley</div> 
+	<div class="cpsubheader">Birds of Prey</div>
+	<div class="cpq">started:</div>
+	<div class="cpa">mm/dd/yy</div>
+	</div>
+		</div>
+			</div></a>
+				</div>	
 
-<div class="currententry"><div class="currentpiccontainer">
-  <img src="https://i.imgur.com/O9y1IY1.png" class="currentpic" style="width:250px">
-  <div class="currentpicoverlay">
-    <div class="currentpictext">Puzzle Blouse Vanessa - Penny Dreadful</div>
-  </div>
-</div>
-</div>
+<div class="currententry">
+<div class="currentpiccontainer">
+		 <img src="https://i.imgur.com/J9pr1j7.jpg" class="currentpic" style="width:250px">
+	<a href="LINK HERE">
+	<div class="currentpicoverlay">
+	<div class="currentpictext"><div class="cpheader"> Vanessa Ives</div> 
+	<div class="cpsubheader">Penny Dreadful</div>
+	<div class="cpq">started:</div>
+	<div class="cpa">mm/dd/yy</div>
+	</div>
+		</div>
+			</div></a>
+				</div>	
 
-<div class="currententry"><div class="currentpiccontainer">
-  <img src="https://i.imgur.com/O9y1IY1.png" class="currentpic" style="width:250px">
-  <div class="currentpicoverlay">
-    <div class="currentpictext">Jedha Jyn - Rogue One</div>
-  </div>
-</div>
-</div>
+<div class="currententry">
+<div class="currentpiccontainer">
+		 <img src="https://i.imgur.com/J9pr1j7.jpg" class="currentpic" style="width:250px">
+	<a href="LINK HERE">
+	<div class="currentpicoverlay">
+	<div class="currentpictext"><div class="cpheader"> Jedha Jyn</div> 
+	<div class="cpsubheader">Rogue One</div>
+	<div class="cpq">started:</div>
+	<div class="cpa">mm/dd/yy</div>
+	</div>
+		</div>
+			</div></a>
+				</div>	
 
 
-<div class="currententry"><div class="currentpiccontainer">
-  <img src="https://i.imgur.com/O9y1IY1.png" class="currentpic" style="width:250px">
-  <div class="currentpicoverlay">
-    <div class="currentpictext">Rey Skywalker - The Rise of Skywalker</div>
-  </div>
-</div>
-</div>
+<div class="currententry">
+<div class="currentpiccontainer">
+		 <img src="https://i.imgur.com/J9pr1j7.jpg" class="currentpic" style="width:250px">
+	<a href="LINK HERE">
+	<div class="currentpicoverlay">
+	<div class="currentpictext"><div class="cpheader"> Rey Skywalker</div> 
+	<div class="cpsubheader">the rise of Skywalker</div>
+	<div class="cpq">started:</div>
+	<div class="cpa">mm/dd/yy</div>
+	</div>
+		</div>
+			</div></a>
+				</div>	
 
 </div>
 
