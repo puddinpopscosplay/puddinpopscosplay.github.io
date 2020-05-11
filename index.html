@@ -1,6 +1,6 @@
 <html>
     <head> 
-<link rel="shortcut icon" href="">
+<link rel="shortcut icon" href="https://i.imgur.com/GBgsyQb.png">
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 	<style>
 html { overflow-x: auto; 
@@ -54,7 +54,8 @@ a:link {text-decoration: none;
 	transition: .8s ease;}
 
 a:hover {color: #000;
-	transition: .8s ease;}
+	transition: .8s ease;
+	opacity: .8;}
 
 a:visited {color: #8d3658;}
 
@@ -63,6 +64,16 @@ a:visited {color: #8d3658;}
         margin: -480px 0px 30px 300px;
         padding-bottom: 5px;}
 
+.footer {text-align: center;
+		text-transform: uppercase;
+		font-family: Arial, Helvetica, sans-serif;
+		letter-spacing: 2px;
+		font-size: 12px;
+		font-weight: bold;
+		background-color:rgba(255,255,255,0.4);
+		width: 100%;
+		padding: 10px;
+		}
 /****************************************
  HEADER
 *****************************************/
@@ -276,17 +287,70 @@ a:visited {color: #8d3658;}
 	font-family:Arial, Helvetica, sans-serif;
 	color: #fff;
 	text-align: right;
-	padding-top: 5px;
+	padding: 5px 0px 5px 0px;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
+
+/****************************************
+ BODY - PREVIOUS PROJECTS
+*****************************************/
+
 .pp {
 	width: 900px;
 	background-color:rgba(255,255,255,0.8);
 	color: #000;
 	padding: 40px;
-	margin-top: 20px;}
+	margin-top: 20px;
+	height: 550px;}
+
+.pppentry{
+	border-color: #8d3658;
+	border-style: solid;
+	border-width: 5px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    width: 250px;
+}
+.pppiccontainer {
+	width:250px;
+	position: relative;
+}
+
+.pppic{
+	display: block;
+	width:250px;
+}
+
+.pppicoverlay{
+	position: absolute;
+	height: 100%;
+  	width: 250px;
+  	opacity: 0;
+  	transition: .5s ease;
+  	background-color: rgb(141, 53, 87, .8);
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.pppiccontainer:hover .pppicoverlay {
+  opacity: 1;
+}
+
+.pppictext {
+	font-family:Arial, Helvetica, sans-serif;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
 
 </style>
     </head> 
@@ -430,7 +494,52 @@ Maecenas ut dui eu felis sagittis sodales eu quis ipsum. Donec nec tempus felis.
 </div>
 
 <div class="pp" id="previous"><h1>previous projects</h1>
-<h2>finished cosplays</h2></div>
+<h2>finished cosplays</h2>
+
+<div class="pppentry">
+<div class="pppiccontainer">
+	<img src="https://i.imgur.com/J9pr1j7.jpg" class="pppic" style="width: 250px; height: 250px;">
+	<a href="">
+	<div class="pppicoverlay">
+		<div class="pppictext"><div class="cpheader"> Ellie </div> 
+		<div class="cpsubheader">The Last of Us</div>
+		<div class="cpq">started:</div>
+		<div class="cpa">mm/dd/yy</div>
+		<div class="cpq">finished:</div>
+		<div class="cpa">mm/dd/yy</div>
+		</div>
+	</div></div></a></div>
+
+<div class="pppentry">
+<div class="pppiccontainer">
+	<img src="https://i.imgur.com/J9pr1j7.jpg" class="pppic" style="width: 250px; height: 250px;">
+	<a href="">
+	<div class="pppicoverlay">
+		<div class="pppictext"><div class="cpheader"> Ellie </div> 
+		<div class="cpsubheader">The Last of Us</div>
+		<div class="cpq">started:</div>
+		<div class="cpa">mm/dd/yy</div>
+		<div class="cpq">finished:</div>
+		<div class="cpa">mm/dd/yy</div>
+		</div>
+	</div></div></a></div>
+	
+	<div class="pppentry">
+<div class="pppiccontainer">
+	<img src="https://i.imgur.com/J9pr1j7.jpg" class="pppic" style="width: 250px; height: 250px;">
+	<a href="">
+	<div class="pppicoverlay">
+		<div class="pppictext"><div class="cpheader"> Ellie </div> 
+		<div class="cpsubheader">The Last of Us</div>
+		<div class="cpq">started:</div>
+		<div class="cpa">mm/dd/yy</div>
+		<div class="cpq">finished:</div>
+		<div class="cpa">mm/dd/yy</div>
+		</div>
+	</div></div></a></div>
+
+</div>
 </div>
 
+<div class="footer">WEBSITE CREATED BY PUDDINPOPS COSPLAY FOR USE BY PUDDINPOPS COSPLAY</div>
 </body>
