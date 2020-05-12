@@ -372,7 +372,13 @@ a:visited {color: #8d3658;}
 *****************************************/
 @media only screen and (max-width: 600px) {
 
-.mobilebar {}
+.mobilebar {
+	float: right;
+	background-attachment: scroll;
+	padding: 10px;
+	position: -webkit-sticky;
+	position: sticky;
+}
 
 #sidebar {display:none;
 }
@@ -389,6 +395,13 @@ a:visited {color: #8d3658;}
 </style>
     </head> 
 <body>
+	<div class="mobilebar">
+
+	<a href="LINK"><img style="width:50px" src="https://i.imgur.com/yu8z1s2.png"></a>
+	<a href="LINK"><img style="width:50px; margin:0px 15px 0px 15px;" src="https://i.imgur.com/lKGupvp.png"></a>
+	<a href="LINK"><img style="width:50px" src="https://i.imgur.com/dx3BJ0i.png"></a>
+
+	</div>
 	<div class="mainheader">
 	</div>
 	<div class="maintitle">puddinpops cosplay
