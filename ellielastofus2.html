@@ -1,0 +1,382 @@
+<html>
+    <head> 
+
+
+        
+<link rel="shortcut icon" href="https://i.imgur.com/GBgsyQb.png">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+	<style>
+html { overflow-x: auto; 
+	scroll-behavior: smooth;} 
+form { display:inline; }
+
+/****************************************
+ BODY BACKGROUND & TEXT STYLE
+*****************************************/
+
+body { 
+	font-family: arial; 
+	font-size: 12px; 
+	color: #8d3658; 
+	margin: 0px;
+	padding: 0px; 
+	text-align: center;
+	background:url(https://i.imgur.com/fY4SpS1.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+
+::-webkit-scrollbar { background: #f3f3f3; width: 10px; height: 5px;}
+::-webkit-scrollbar-thumb { background: #8d3658; width: 10px }
+::-webkit-scrollbar-corner { background: #000; }
+
+::-moz-selection { background-color: #8d3658; color: #fff;}
+::selection {background-color: #8d3658; color: #fff;}
+
+h1 {font-family: 'Sacramento', cursive;
+    font-weight: bold; 
+    font-size: 30px; 
+    margin-left: 30px; 
+    color: #8d3658;
+    text-transform: lowercase;}
+
+h2 {font-family: arial; 
+    text-transform: uppercase; 
+    font-size: 10px; 
+    text-align: right; 
+    margin: -20px 30px 10px 30px;  
+    border-top: 1px #8d3658 solid; 
+    color: #000;
+	letter-spacing: 2px;}
+
+a:link {text-decoration: none;
+	color: #8d3658;
+	transition: .8s ease;}
+
+a:hover {color: #000;
+	transition: .8s ease;
+	opacity: .8;}
+
+a:visited {color: #8d3658;}
+
+#wrapper {text-align:left;
+        width:1000px;
+        margin: -480px 0px 30px 300px;
+        padding-bottom: 5px;}
+
+.footer {text-align: center;
+		text-transform: uppercase;
+		font-family: Arial, Helvetica, sans-serif;
+		letter-spacing: 2px;
+		font-size: 12px;
+		font-weight: bold;
+		background-color:rgba(255,255,255,0.4);
+		width: 100%;
+		padding: 10px 0px;
+		}
+/****************************************
+ HEADER
+*****************************************/
+
+.mainheader {display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	margin-top: 100px;
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	background: url(https://i.imgur.com/7gisw6x.jpg);
+  	background-repeat: no-repeat;
+  	background-size: 400px 400px;}
+
+.maintitle {display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	font-family: 'Sacramento', cursive;
+	font-size: 60px;
+	color: #8d3658;
+	text-align: center;
+	margin-top: -35px;
+	font-weight: bold;
+	background-color:rgba(255,255,255,0.4);
+	padding: 10px;}
+
+/****************************************
+ SIDEBAR
+*****************************************/
+#sidebar {background-color:rgba(255,255,255,0.4);
+	width: 220px;
+	height: 450px;
+	margin-left: 40px;
+	margin-top: 10px;
+	border-color: #8d3658;
+	border-style: solid;
+	border-width: 5px;
+	background-attachment: scroll;
+	padding: 10px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;}
+ 
+
+.tableofcontents {
+	border-color: #8d3658;
+	border-style: solid;
+	border-width: 2px;
+	padding: 5px;
+	height: 95%;}
+
+.navigationlink {text-decoration: none;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-align: left;
+	color: #8d3658;
+	padding: 10px;
+	font-weight: bold;
+	margin-top: 10px;
+	background-color:rgba(255,255,255,0.5)}
+	
+/****************************************
+ DO NOT NEED TO COPY ONCE COMPLIED!
+*****************************************/
+.wipmain{width: 900px;
+	background-color:rgba(255,255,255,0.8);
+	color: #000;
+	padding: 40px;}
+
+.wiptext{
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 150%;
+    padding: 20px 60px;
+    text-align: justify;
+}
+
+.progresspic {
+    width: 250px;
+    height: auto;
+}
+
+#progresstable {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    margin: 20px 45px;
+    width: 90%;
+}
+
+#progresstable td{
+    margin: auto;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    padding: 20px 60px;
+    text-align: justify;
+}
+
+.todomain {width: 900px;
+	background-color:rgba(255,255,255,0.8);
+	color: #000;
+	padding: 40px;
+    height: auto;
+    margin-top: 20px;
+    }
+
+/****************************************
+ COMPLETED PAGES
+*****************************************/
+.photoshootmain {width: 900px;
+	background-color:rgba(255,255,255,0.8);
+	color: #000;
+	padding: 40px;
+    height: auto;
+    margin-top: 20px;
+    }
+
+.photoshootrow {
+    padding: 2px;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.photoshootcolumn {
+    padding: 2px;
+    -ms-flex: 24%;
+    flex: 24%;
+    max-width: 24%;
+}
+
+.photoshootcolumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.photoshootphotog {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #8d3658;
+    text-align: center;
+    padding: 4px;
+    background-color: rgba(255,255,255,0.8);
+    text-transform: uppercase;
+}
+
+
+
+/****************************************
+ MOBILE - HIDDEN
+*****************************************/
+.mobilebar {display:none;}
+
+
+/****************************************
+ MOBILE - SHOWN
+*****************************************/
+@media screen and (max-device-width: 600px) and (orientation: portrait) {
+
+.mobilebar {
+	display: block;
+	float: right;
+	background-attachment: scroll;
+	padding: 10px;
+	position: -webkit-sticky;
+	position: sticky;
+}
+
+#sidebar {display:none;
+}
+
+#wrapper {width:100%;
+        margin: -20px 0px 30px 30px;
+}
+
+#progresstable td{
+    padding: 20px 20px;
+}
+
+.photoshootcolumn {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+}
+
+
+
+
+</style>
+    </head> 
+<body>
+	<div class="mobilebar">
+
+	<a href="LINK"><img style="width:70px" src="https://i.imgur.com/yu8z1s2.png"></a>
+	<a href="LINK"><img style="width:70px; margin:0px 15px 0px 15px;" src="https://i.imgur.com/lKGupvp.png"></a>
+	<a href="LINK"><img style="width:70px" src="https://i.imgur.com/dx3BJ0i.png"></a>
+
+	</div>
+	<div class="mainheader">
+	</div>
+	<div class="maintitle">puddinpops cosplay
+		</div>
+	<div id="sidebar">
+	<div class="tableofcontents">
+		<img src="https://i.imgur.com/B2lJodF.png" style="width: 150px; margin-bottom: 20px;">
+		<br><br><h2>navigation</h2>
+	<div class="navigationlink"><a href="#progress">in progress</a></div>
+	<div class="navigationlink"><a href="#resources">resources</a></div>
+	<div class="navigationlink"><a href="#photoshoots">photo shoots</a></div>
+	<div class="navigationlink"><a href="https://puddinpopscosplay.com/">home</a></div>
+	<div class="navigationlink">
+	<a href="LINK"><img style="width:50px" src="https://i.imgur.com/yu8z1s2.png"></a>
+	<a href="LINK"><img style="width:50px; margin: 0px 15px 0px 15px;" src="https://i.imgur.com/lKGupvp.png"></a>
+	<a href="LINK"><img style="width:50px" src="https://i.imgur.com/dx3BJ0i.png"></a>
+	</div></div></div>
+
+
+<div id="wrapper">
+
+<div class="wipmain">    
+    <h1>name of cosplay</h1>
+    <h2>source</h2>
+    <div class="wiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec blandit elit. Fusce sagittis lacus dui, quis egestas sem cursus vel. Etiam maximus interdum velit, in venenatis erat auctor nec. Nam non leo eget ex suscipit convallis. Nulla facilisi. Sed ac laoreet metus. Phasellus posuere quam dolor, sed tincidunt ante faucibus id. Morbi consectetur est ultrices venenatis gravida. Nam pharetra aliquam lectus, eget fermentum odio tincidunt efficitur. Vestibulum varius augue quam, vel semper leo dapibus sed. Praesent vestibulum velit scelerisque lectus laoreet, eget feugiat urna rhoncus. Vivamus et massa id tortor fermentum viverra. Proin vestibulum erat ipsum, ac dignissim leo rhoncus faucibus. Duis dolor ex, lobortis et porta nec, porta vitae mauris. Cras scelerisque accumsan sem, vitae luctus elit rhoncus et. Sed tempus augue vitae nisl eleifend, non eleifend tellus suscipit.
+        Nam lobortis ex ac tincidunt luctus. Morbi ante nisl, pulvinar vel ipsum at, sagittis tincidunt ante. Sed dictum, mauris sed viverra pellentesque, tortor odio ultricies nisi, eu rhoncus metus nisi sed metus. Integer laoreet in velit at suscipit. Aliquam erat volutpat. Phasellus vitae felis a odio posuere ultrices. Sed tempor nulla ac felis facilisis volutpat. Vivamus ac nisi at ligula tincidunt lobortis eu ut eros. Vestibulum vel mauris sapien. Sed eget lectus vel arcu molestie pulvinar at id dui. Etiam vitae diam sem.
+    </div>
+</div>
+
+<div class="todomain" id="progress">
+    <h1>Progress</h1>
+    <h2>documenting the process</h2>
+    <table id="progresstable"><tr><td><img src="https://i.imgur.com/J9pr1j7.jpg" class="progresspic" style="width:250px"></td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec blandit elit. Fusce sagittis lacus dui, quis egestas sem cursus vel. Etiam maximus interdum velit, in venenatis erat auctor nec. Nam non leo eget ex suscipit convallis. Nulla facilisi. Sed ac laoreet metus. Phasellus posuere quam dolor, sed tincidunt ante faucibus id. Morbi consectetur est ultrices venenatis gravida. Nam pharetra aliquam lectus, eget fermentum odio tincidunt efficitur. Vestibulum varius augue quam, vel semper leo dapibus sed. Praesent vestibulum velit scelerisque lectus laoreet, eget feugiat urna rhoncus. Vivamus et massa id tortor fermentum viverra. Proin vestibulum erat ipsum, ac dignissim leo rhoncus faucibus. Duis dolor ex, lobortis et porta nec, porta vitae mauris. Cras scelerisque accumsan sem, vitae luctus elit rhoncus et. Sed tempus augue vitae nisl eleifend, non eleifend tellus suscipit.
+        </td>
+    </tr>
+    </table>
+
+    <table id="progresstable"><tr>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec blandit elit. Fusce sagittis lacus dui, quis egestas sem cursus vel. Etiam maximus interdum velit, in venenatis erat auctor nec. Nam non leo eget ex suscipit convallis. Nulla facilisi. Sed ac laoreet metus. Phasellus posuere quam dolor, sed tincidunt ante faucibus id. Morbi consectetur est ultrices venenatis gravida. Nam pharetra aliquam lectus, eget fermentum odio tincidunt efficitur. Vestibulum varius augue quam, vel semper leo dapibus sed. Praesent vestibulum velit scelerisque lectus laoreet, eget feugiat urna rhoncus. Vivamus et massa id tortor fermentum viverra. Proin vestibulum erat ipsum, ac dignissim leo rhoncus faucibus. Duis dolor ex, lobortis et porta nec, porta vitae mauris. Cras scelerisque accumsan sem, vitae luctus elit rhoncus et. Sed tempus augue vitae nisl eleifend, non eleifend tellus suscipit.
+        </td>
+        <td><img src="https://i.imgur.com/J9pr1j7.jpg" class="progresspic" style="width:250px"></td>
+    </tr>
+    </table>
+
+    <table id="progresstable"><tr><td><img src="https://i.imgur.com/J9pr1j7.jpg" class="progresspic" style="width:250px"></td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec blandit elit. Fusce sagittis lacus dui, quis egestas sem cursus vel. Etiam maximus interdum velit, in venenatis erat auctor nec. Nam non leo eget ex suscipit convallis. Nulla facilisi. Sed ac laoreet metus. Phasellus posuere quam dolor, sed tincidunt ante faucibus id. Morbi consectetur est ultrices venenatis gravida. Nam pharetra aliquam lectus, eget fermentum odio tincidunt efficitur. Vestibulum varius augue quam, vel semper leo dapibus sed. Praesent vestibulum velit scelerisque lectus laoreet, eget feugiat urna rhoncus. Vivamus et massa id tortor fermentum viverra. Proin vestibulum erat ipsum, ac dignissim leo rhoncus faucibus. Duis dolor ex, lobortis et porta nec, porta vitae mauris. Cras scelerisque accumsan sem, vitae luctus elit rhoncus et. Sed tempus augue vitae nisl eleifend, non eleifend tellus suscipit.
+        </td>
+    </tr>
+    </table>
+
+</div>
+
+<div class="photoshootmain" id="photoshoots">
+    <div class="photoshootrow"> 
+        <div class="photoshootcolumn">
+            <h1>DATE OF SHOOT</h1>
+            <h2>LOCATION</h2>
+            <a href=""><div class="photoshootphotog">📷 mezapixel</div></a>
+            <a href=""><img src="https://i.imgur.com/J9pr1j7.jpg"></a>
+            <a href=""><img src="https://i.imgur.com/J9pr1j7.jpg"></a>
+            <a href=""><img src="https://i.imgur.com/J9pr1j7.jpg"></a>
+        </div>
+
+        <div class="photoshootcolumn">
+            <h1>DATE OF SHOOT</h1>
+            <h2>LOCATION</h2>
+            <a href=""><div class="photoshootphotog">📷 mezapixel</div></a>
+            <a href=""><img src="https://i.imgur.com/J9pr1j7.jpg"></a>
+            <a href=""><img src="https://i.imgur.com/J9pr1j7.jpg"></a>
+            <a href=""><img src="https://i.imgur.com/J9pr1j7.jpg"></a>
+        </div>
+
+        <div class="photoshootcolumn">
+            <h1>DATE OF SHOOT</h1>
+            <h2>LOCATION</h2>
+            <a href=""><div class="photoshootphotog">📷 mezapixel</div></a>
+            <a href=""><img src="https://i.imgur.com/J9pr1j7.jpg"></a>
+            <a href=""><img src="https://i.imgur.com/J9pr1j7.jpg"></a>
+            <a href=""><img src="https://i.imgur.com/J9pr1j7.jpg"></a>
+        </div>
+
+        <div class="photoshootcolumn">
+            <h1>DATE OF SHOOT</h1>
+            <h2>LOCATION</h2>
+            <a href=""><div class="photoshootphotog">📷 mezapixel</div></a>
+            <a href=""><img src="https://i.imgur.com/J9pr1j7.jpg"></a>
+            <a href=""><img src="https://i.imgur.com/J9pr1j7.jpg"></a>
+            <a href=""><img src="https://i.imgur.com/J9pr1j7.jpg"></a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</div>
+
+<div class="footer">WEBSITE CREATED BY PUDDINPOPS COSPLAY FOR USE BY PUDDINPOPS COSPLAY</div>
+</body>
